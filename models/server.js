@@ -1,5 +1,7 @@
 import express from 'express';
 import cors from 'cors';
+import http from 'http'
+import {Server as ServerIO} from 'socket.io'
 
 import { exampleRouter } from '../routes/index.js';
 import { SERVER_RUNNING } from '../constants/messages.constant.js';
@@ -8,6 +10,9 @@ export default class Server {
 
     constructor() {
         this.app = express();
+        this.server = http.createServer(this.app);
+        this.io = new ServerIO(this.server);
+
         this.port = process.env.PORT;
         this.paths = {
             example: EXAMPLE_PATH
@@ -31,7 +36,7 @@ export default class Server {
     }
 
     listen() {
-        this.app.listen(this.port, () => {
+        this.server.listen(this.port, () => {
             console.log(SERVER_RUNNING(this.port));
         });
     }
