@@ -10,6 +10,24 @@
 <body class="container">
     <h1 class="mt-2">Socket client</h1>
     <hr>
+
+    <p>
+        Server Status:
+        <span id="online-socket" class="text-success">Online</span>
+        <span id="offline-socket" class="text-danger">Offline</span>
+    </p>
+    
+    <div class="row">
+        <div class="col">
+            <input type="text" id="txt-message" class="form-control">
+        </div>
+        <div class="col">
+            <button id="btn-send" class="btn btn-primary">
+                Send
+            </button>
+        </div>
+    </div>
+
     <script src="/socket.io/socket.io.js"></script>
     <script src="./js/socket-client.js"></script>
 </body>

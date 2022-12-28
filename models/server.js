@@ -5,7 +5,8 @@ import {Server as ServerIO} from 'socket.io'
 
 import { exampleRouter } from '../routes/index.js';
 import { SERVER_RUNNING } from '../constants/messages.constant.js';
-import { EXAMPLE_PATH, LOCAL_PUBLIC_FOLDER_PATH } from '../constants/routes.constant.js';
+import { CONNECTION_SOCKET_PATH, EXAMPLE_PATH, LOCAL_PUBLIC_FOLDER_PATH } from '../constants/routes.constant.js';
+import { socketController } from '../sockets/socket.controller.js';
 export default class Server {
 
     constructor() {
@@ -21,6 +22,8 @@ export default class Server {
         this.middleware();
 
         this.routes();
+
+        this.sockets();
     }
 
     middleware() {
@@ -33,6 +36,10 @@ export default class Server {
 
     routes() {
         this.app.use(this.paths.example, exampleRouter);
+    }
+
+    sockets() {
+        this.io.on(CONNECTION_SOCKET_PATH, socketController);
     }
 
     listen() {

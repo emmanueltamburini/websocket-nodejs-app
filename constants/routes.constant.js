@@ -5,3 +5,7 @@ export const EXAMPLE_PATH = `${API_BASE_PATH}/example`;
 
 export const BASE_PATH = '/';
 export const ID_PATH = '/:id';
+
+export const CONNECTION_SOCKET_PATH = 'connection';
+export const DISCONNECTION_SOCKET_PATH = 'disconnect';
+export const SEND_MESSAGE_SOCKET_PATH = 'send-message';
