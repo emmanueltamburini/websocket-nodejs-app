@@ -9,8 +9,6 @@ export const SOMETHING_WENT_WRONG_ = 'Something went wrong in generating JWT';
 export const TOKEN_INVALID = 'x-token is not valid';
 export const TOKEN_INVALID_USER_NOT_FOUND = 'x-token is not valid - user does not exists';
 export const USER_UNAUTHORIZE = 'User is unauthorize, please talk with the admin';
-export const CLIENT_CONNECTED = 'Client connected';
-export const CLIENT_DISCONNECTED = 'Client disconnected';
 
 export const ELEMENT_IS_NOT_AVAILABLE = (element) => `${capitalize(element)} is not available`;;
 export const SERVER_RUNNING = (port) =>  `Server is running in port ${port}`;
