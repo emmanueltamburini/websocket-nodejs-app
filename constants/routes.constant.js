@@ -9,4 +9,5 @@ export const BASE_PATH = '/';
 export const ID_PATH = '/:id';
 
 export const CONNECTION_SOCKET_PATH = 'connection';
-export const SEND_MESSAGE_SOCKET_PATH = 'send-message';
+export const NEXT_TICKET_SOCKET_PATH = 'next-ticket';
+export const LAST_TICKET_SOCKET_PATH = 'last-ticket';

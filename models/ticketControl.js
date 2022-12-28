@@ -50,8 +50,8 @@ export default class TicketControl {
     }
 
     next() {
-        this.last +=1;
-        const ticket = new Ticket(this.last, null);
+        this.lastTicket +=1;
+        const ticket = new Ticket(this.lastTicket, null);
         this.tickets.push(ticket);
 
         this.saveDB();
