@@ -1,4 +1,7 @@
 import { SEND_MESSAGE_SOCKET_PATH } from "../constants/routes.constant.js";
+import TicketControl from "../models/ticketControl.js";
+
+const ticketControl = new TicketControl();
 
 export const socketController = socket => {
     socket.on(SEND_MESSAGE_SOCKET_PATH, (payload, callback) => {

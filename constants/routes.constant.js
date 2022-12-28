@@ -1,4 +1,6 @@
 export const LOCAL_PUBLIC_FOLDER_PATH = 'public';
+export const LOCAL_PREVIOUS_PATH = '../';
+export const DB_PATH = 'db/data.json';
 
 export const API_BASE_PATH = '/api';
 export const EXAMPLE_PATH = `${API_BASE_PATH}/example`;
