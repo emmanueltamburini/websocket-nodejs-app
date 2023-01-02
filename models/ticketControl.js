@@ -67,7 +67,7 @@ export default class TicketControl {
 
         ticket.desktop = desktop;
 
-        this.lastTicket.unshift(ticket);
+        this.lastFourTicket.unshift(ticket);
 
         if (this.lastFourTicket.length > 4) {
             this.lastFourTicket.splice(-1, 1);
