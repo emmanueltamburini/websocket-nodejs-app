@@ -4,7 +4,7 @@
 
 This app is an example about nodejs, Its functionality is to simulate a tickets system like banks or supermarkets tickets systems.
 
-You can check final result [here](https://cosmic-pika-bb0be8.netlify.app/) (if you have a problem with url please notice to emmanueltamburini@gmail.com)
+You can check final result [here](https://websocket-nodejs-app-production.up.railway.app/) (if you have a problem with url please notice to emmanueltamburini@gmail.com)
 
 ## Getting started
 
