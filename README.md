@@ -1,4 +1,4 @@
-# WebServer + RestSerer
+# Websocket-nodejs-app
 
 ## TicketApp README
 
